@@ -1,0 +1,394 @@
+/* Formulario => Ingresar venta */
+
+
+div#content_search_producto{
+      padding: 10px 0px 10px 0;
+}
+div#content_search_producto div.list{
+  margin: 0;
+}
+
+div#content_search_producto div.list div.row{
+  line-height: 20px;
+  text-align: left;
+}
+
+div#content_button_add_formula{
+   margin: 0 45px;
+   position: absolute;
+ }
+
+div#selectedProducto{}
+
+
+
+  /* detalle producto */
+  div#detalle_producto{margin: 9px 0 0 0;}
+
+
+
+  div#detalle_producto div.info{
+    display: inline-block;
+    vertical-align: top;
+    width: 120px;
+  }
+
+  div#detalle_producto div.info div.label{
+    border-top: solid 1px;
+    line-height: 24px;
+  }
+
+  div#detalle_producto div.info div.value{
+    height: 24px;
+    line-height: 24px;
+  }
+  div#detalle_producto div.info input{
+    line-height: 24px;
+    text-align: center;
+    width: 120px;
+  }
+
+
+
+
+  div#detalle_producto div.list {
+      background: rgba(255,255,255,1);
+      border-left: solid;
+      border-right: solid;
+      font-size: 13px;
+      margin: -20px 0 0 -3px;
+      max-width: 180px !important;
+      min-width: 180px;
+      padding: 5px 0 0 0;
+      position: absolute;
+      width: -webkit-fill-available;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+
+  div#detalle_producto div.list div.row {
+      border-bottom: solid 1px rgba(240,240,240,1);
+      cursor: pointer;
+      line-height: 24px;
+      transition: 0.1s all ease;
+  }
+
+  div#detalle_producto div.list div.row div{padding: 3px 0 0 10px;}
+  div#detalle_producto div.list div.row:hover{
+    background: rgba(235,235,235,1);
+  }
+
+  div#info_presentacion div.list{
+    margin: -20px 0 0 -34px;
+  }
+
+  div#info_presentacion div.list div.row{
+    text-align: left;
+  }
+
+  div#info_presentacion div.list div.row div.presentacion,
+  div#info_presentacion div.list div.row div.disponible{
+    display: inline-block;
+    vertical-align: top;
+  }
+  div#info_presentacion div.list div.row div.presentacion{
+    width: 110px;
+  }
+  div#info_presentacion div.list div.row div.disponible{
+    padding: 3px 5px 0 5px;
+    text-align: center;
+    width: 50px;
+  }
+
+  div#info_fraccion div.list{
+    max-width: 120px !important;
+    min-width: 120px;
+  }
+
+  div#detalle_producto div#Item_empezado{
+    height: 24px;
+    line-height: 24px;
+
+  }
+
+  div#detalle_producto div.content_button{}
+
+  div#detalle_producto div.content_button div#btnAddItem{}
+
+  div#detalle_producto div.content_button div.button{}
+
+
+  div.content_data{}
+  div.content_data div.datagrid{}
+  div.content_data div.datagrid div.cell{
+    display: inline-block;
+    min-width: 80px;
+  }
+
+  div.content_data div.datagrid div.head{
+    background: rgba(0,0,0,0.1);
+    color: rgba(255,0,255,.5);
+    line-height: 22px;
+  }
+  div.content_data div.datagrid div.row{
+    line-height: 22px;
+  }
+
+  /* dataProducto */
+  div.content_data div#dataProducto{
+    margin: 0 0 10px 0;
+  }
+
+  div.content_data div#dataProducto div.head{
+
+  }
+
+  div.content_data div#dataProducto div.row{
+
+  }
+
+  div.content_data div#dataProducto div.row div.delete_row{
+      display: none;
+      line-height: 20px;
+      transition: .4s ease all;
+  }
+  div.content_data div#dataProducto div.row div.delete_row div.button_delete{
+      background: rgba(142, 173, 104, 0.38);
+      border-bottom: solid 1px;
+      border-top: solid 1px;
+      cursor: pointer;
+      line-height: 20px;
+      margin: auto;
+      width: 100px;
+      /* Quitar seleccion */
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+
+  div.content_data div#dataProducto div.row:hover > div.cell{
+    display: none;
+  }
+  div.content_data div#dataProducto div.row:hover > div.delete_row{
+    cursor: default;
+    display: block;
+  }
+
+  div.content_data div#dataProducto div.codigo{
+
+  }
+
+  div.content_data div#dataProducto div.descripcion{width: 350px;}
+  div.content_data div#dataProducto div.unidad{}
+  div.content_data div#dataProducto div.precio_unidad{}
+  div.content_data div#dataProducto div.cantidad{}
+  div.content_data div#dataProducto div.precio{}
+
+
+
+
+    /* frm add formula */
+    div#frm_add_formula{
+      background: rgba(255,255,255,1);
+      border: solid 2px;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 2px rgba(0,0,0,0.08);
+      box-sizing: border-box;
+      padding: 0 5px;
+      position: absolute;
+      z-index: 1;
+    }
+
+    div#frm_add_formula div.setting_formula,
+    div#frm_add_formula div.create_formula,
+    div#frm_add_formula div.view_formula{
+      display: inline-block;
+      vertical-align: top;
+    }
+    div#frm_add_formula div.setting_formula{width: 260px;}
+    div#frm_add_formula div.create_formula{width: 250px;}
+    div#frm_add_formula div.view_formula{width: 250px;}
+
+
+
+    div#frm_add_formula div.setting_formula div.field{
+      display: inline-block;
+      vertical-align: top;
+      width: 80px;
+    }
+    div#frm_add_formula div.setting_formula div.field input{
+        text-align: center;
+    }
+
+
+    div#frm_add_formula div#button_close_frm_add_formula{
+
+    }
+
+    div#frm_add_formula div#content_button_head_frm_add_formula div.sub_content_button{
+      display: inline-block;
+      vertical-align: top;
+      width: 45%;
+    }
+
+    div#frm_add_formula div#content_button_head_frm_add_formula div.button{
+      font-size: 1.2em;
+      font-weight: bold;
+      height: 22px;
+      line-height: 16px;
+      margin: 0 0 0 10px;
+      width: 36px;
+    }
+
+    div#frm_add_formula div#content_button_head_frm_add_formula div.button div.label{
+      line-height: 20px;
+      padding: 0;
+    }
+
+    div#frm_add_formula div#content_button_head_frm_add_formula div#button_close_frm_add_formula{float: left;;}
+    div#frm_add_formula div#content_button_head_frm_add_formula div#button_new_formula{
+      float: right;
+      margin: 0 10px 0 0;
+    }
+
+    div#frm_add_formula div.content_button_head_frm_add_formula div.button div.label{
+      line-height: 20px;
+      padding: 0;
+    }
+
+
+
+div#frm_add_formula div#listFormula{
+  margin:0 2px;
+  width: 250px;
+}
+div#frm_add_formula div#listFormula div.row{text-align: left;}
+
+/* --- traído del diseño anterior  --- */
+
+/* Colores - Peso */
+div#listColores{
+    margin: auto;
+    padding: 5px 0 0 0;
+    width: 230px;
+}
+div#listColores div.encabezado{
+  background: rgba(0,0,0,0.1);
+  color: rgba(255,0,255,.5);
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 20px;
+}
+div#listColores div.encabezado div.color,
+div#listColores div.row div.color,
+div#listColores div.row div.peso,
+div#listColores div.encabezado div.peso{
+    display: inline-block;
+    vertical-align: top;
+}
+div#listColores div.encabezado div.color,
+div#listColores div.row div.color{
+    padding: 0 10px 0 0;
+    width: 170px;
+}
+div#listColores div.row div.color{
+    font-size: 0.85em;
+    padding: 0 10px 0 5px !important;
+    text-align: left;
+}
+div#listColores div.encabezado div.peso,
+div#listColores div.row div.peso{
+    text-align: center;
+    width: 40px;
+}
+
+div#listColores div.descripcion_formula div#formula_seleccionada {
+    color: rgba(154, 41, 109, 0.92);
+    font-size: 1.1em;
+    height: 20px;
+    padding: 2px;
+}
+
+/* List cantidad de formula */
+div#listUnidad_medida_formula{
+    background: rgba(255,255,255,1);
+    border-left: solid;
+    border-right: solid;
+    position: absolute;
+    text-align: center;
+    width: 75px;
+}
+
+div#listUnidad_medida_formula div.row{
+    border-bottom: solid 1px rgba(230,230,230,1);
+    cursor: pointer;
+    line-height: 20px;
+    /* Quitar seleccion */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+div#listUnidad_medida_formula div.row:hover{
+    background: rgba(235,235,235,1);
+}
+
+/* No hay existencias en inventario --- > Ni empezados */
+.empty{
+    color:rgba(255,0,0,1);
+}
+
+div#content_button_eliminar_formula{
+  padding: 0 0 5px 0;
+}
+
+div#content_button_eliminar_formula div#button_eliminar_formula{
+
+}
+
+
+div#setterFormula{}
+
+div#setterFormula div.help{
+  line-height: 20px;
+  padding: 2px 0;
+}
+
+div#setterFormula div.content_button{
+  margin: 15px 0 0 0;
+}
+
+div#setterFormula div.content_button div.button{
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+div#listProducto_formula{
+    background: rgba(255,255,255,1);
+    border-left: solid;
+    border-right: solid;
+    cursor: pointer;
+    font-size: 13px;
+    margin: 5px 0 0 -30px;
+    padding: 5px 0 0 0;
+    position: absolute;
+    width: 235px;
+      /* remove selection */
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+}
+
+div#listProducto_formula div.row:hover{
+    background: rgba(235,235,235,1);
+}
+
+
+div.message{margin: 20px 0 0 0;}
+
+
+/**/

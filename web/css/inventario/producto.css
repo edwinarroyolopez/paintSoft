@@ -1,0 +1,120 @@
+/* Formulario => Ingresar venta */
+
+
+div#content_search_producto{
+      padding: 10px 0px 10px 0;
+}
+div#content_search_producto div.list{
+  margin: 0;
+}
+
+div#content_search_producto div.list div.row{
+  line-height: 20px;
+  text-align: left;
+}
+
+div#content_button_add_formula{
+   margin: 0 45px;
+   position: absolute;
+ }
+
+div#selectedProducto{}
+
+
+
+  /* detalle producto */
+  div#detalle_producto{margin: 9px 0 0 0;}
+
+
+
+  div#detalle_producto div.info{
+    display: inline-block;
+    vertical-align: top;
+    width: 120px;
+  }
+
+  div#detalle_producto div.info div.label{
+    border-top: solid 1px;
+    line-height: 24px;
+  }
+
+  div#detalle_producto div.info div.value{
+    height: 24px;
+    line-height: 24px;
+  }
+  div#detalle_producto div.info input{
+    line-height: 24px;
+    text-align: center;
+    width: 120px;
+  }
+
+
+
+
+  div#detalle_producto div.list {
+      background: rgba(255,255,255,1);
+      border-left: solid;
+      border-right: solid;
+      font-size: 13px;
+      margin: -20px 0 0 -3px;
+      max-width: 180px !important;
+      min-width: 180px;
+      padding: 5px 0 0 0;
+      position: absolute;
+      width: -webkit-fill-available;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+
+  div#detalle_producto div.list div.row {
+      border-bottom: solid 1px rgba(240,240,240,1);
+      cursor: pointer;
+      line-height: 24px;
+      transition: 0.1s all ease;
+  }
+
+  div#detalle_producto div.list div.row div{padding: 3px 0 0 10px;}
+  div#detalle_producto div.list div.row:hover{
+    background: rgba(235,235,235,1);
+  }
+
+  div#info_presentacion div.list{
+    margin: -20px 0 0 -34px;
+  }
+
+  div#info_presentacion div.list div.row{
+    text-align: left;
+  }
+
+  div#info_presentacion div.list div.row div.presentacion,
+  div#info_presentacion div.list div.row div.disponible{
+    display: inline-block;
+    vertical-align: top;
+  }
+  div#info_presentacion div.list div.row div.presentacion{
+    width: 110px;
+  }
+  div#info_presentacion div.list div.row div.disponible{
+    padding: 3px 5px 0 5px;
+    text-align: center;
+    width: 50px;
+  }
+
+  div#info_fraccion div.list{
+    max-width: 120px !important;
+    min-width: 120px;
+  }
+
+  div#detalle_producto div#Item_empezado{
+    height: 24px;
+    line-height: 24px;
+
+  }
+
+  div#detalle_producto div.content_button{}
+
+  div#detalle_producto div.content_button div#btnAddItem{}
+
+  div#detalle_producto div.content_button div.button{}

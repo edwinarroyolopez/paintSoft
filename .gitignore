@@ -1,0 +1,7 @@
+# paintSoft
+/build/
+/dist/
+/nbproject
+/paquete
+/test
+# /src/java/model/Conexion.java

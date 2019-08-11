@@ -1,0 +1,244 @@
+
+
+/* fields */
+div.field {
+  border: solid 1px rgba(220,220,220,1);
+  border-radius: 2px;
+  height: 52px;
+  margin: 5px auto auto auto;
+  width: 180px;
+  }
+  /* textbox */
+  div.field div.textbox{
+    display: inline-block;
+    height: 20px;
+    padding: 2px;
+    vertical-align: top;
+    width: -webkit-fill-available;
+  }
+  div.field div.textbox input{
+    border-bottom: solid 1px rgba(200, 200, 200, .7);
+    font-size: .9em;
+    line-height: 24px;
+    max-width: -webkit-fill-available;
+    width: -webkit-fill-available;
+  }
+  div.field div.textbox input:focus{
+    background: rgba(142, 173, 104, 0.05);
+    border-bottom: solid 1px rgba(177, 194, 156, 0.9) !important;
+  }
+  div.field div.label{
+    border-bottom: solid 1px rgba(220,220,220,1);
+    color: rgba(177, 194, 156, 0.9);
+    line-height: 24px;
+    text-align: center;
+    vertical-align: top;
+    width: -webkit-fill-available;
+          /* Remove selection */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+  }
+  div.field div.label div{
+      font-size: .8em;
+      padding: 5px 0 0 20px;
+  }
+
+  /* buttons */
+  div.content_button{
+    padding: 10px 0 10px 0;
+            /* remove selection */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+  }
+  div.content_button div.button{
+    background: rgb(242, 245, 240);
+    border-bottom: solid 1px rgb(142, 173, 104);
+    border-radius: 3px;
+    border-top: solid 1px rgb(142, 173, 104);
+    color: rgb(142, 173, 104);
+    cursor: pointer;
+    height: 24px;
+    margin: auto;
+    text-align: center;
+    width: 80px;
+  }
+  div.content_button div.button div.label{
+    padding: 6px;
+  }
+
+  /* search */
+  div.content_search{padding: 10px 0 0 0;}
+    div.content_search div.searcher{
+        margin: auto;
+        max-width: 350px;
+        min-width: 200px;
+    }
+      div.content_search div.searcher div.fieldSearch{
+        height: 20px;
+        padding: 2px;
+      }
+      div.content_search div.searcher div.fieldSearch input::placeholder{
+           color:rgba(177, 194, 156, 0.9);
+           text-align: center;
+        }
+        div.content_search div.searcher div.fieldSearch input{
+           border-bottom: solid 1px rgba(230,230,230,1);
+           font-size: 1em;
+           min-width: -webkit-fill-available;
+           padding: 0 0 2px 0;
+           text-align: center;
+        }
+        div.content_search div.searcher div.fieldSearch input:focus{
+           border-bottom: solid 1px rgba(177, 194, 156, 0.9) !important;
+        }
+        div.content_search div.searcher div.label{
+          padding: 3px;
+          text-align: center;
+        }
+        /* list */
+        div.content_search div.searcher div.list{
+            background: rgba(255,255,255,1);
+            border-left: solid;
+            border-right: solid;
+            font-size: 13px;
+            margin: -16px 0 0 0px;
+            max-width: 350px !important;
+            min-width: 200px;
+            padding: 5px 0 0 0;
+            position: absolute;
+            width: -webkit-fill-available;
+              /* remove selection */
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+        }
+          div.content_search div.searcher div.list div.row{
+            border-bottom: solid 1px rgba(240,240,240,1);
+            cursor: pointer;
+            transition: 0.1s all ease;
+          }
+          div.content_search div.searcher div.list div.row div{padding: 3px 0 0 15px;}
+          div.content_search div.searcher div.list div.row:hover{
+            background: rgba(235,235,235,1);
+          }
+
+
+  /* content crud */
+  div.content_crud{
+    margin: auto;
+    max-width: max-content;
+    min-width: -webkit-fill-available;
+  }
+
+  div.content_crud div.driver{
+    cursor: default;
+    border: solid;
+    min-height: 40px;
+    text-align: center;
+        /* remove selection */
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+  }
+  /* crud: operations */
+  div.content_crud div.driver div.operations{
+    display: inline-block;
+    padding: 8px 5px 5px 5px;
+    vertical-align: top;
+  }
+  div.content_crud div.driver div.operations div.add,
+  div.content_crud div.driver div.operations div.remove{
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    height: 2em;
+    margin: 0 5px 0 5px;
+    transition: .2s all ease;
+    vertical-align: top;
+    width: 2em;
+  }
+  div.content_crud div.driver div.operations div.add{
+      background-image: url("../../img/administrador/add-green.svg");
+  }
+  div.content_crud div.driver div.operations div.remove{
+      background-image: url("../../img/administrador/remove-green.svg");
+  }
+  div.content_crud div.driver div.operations div.add:hover{
+    background-image: url("../../img/administrador/add-blue.svg");
+  }
+  div.content_crud div.driver div.operations div.remove:hover{
+    background-image: url("../../img/administrador/remove-red.svg");
+  }
+  /* crud: profile info */
+  div.content_crud div.driver div.profile_info{
+    display: inline-block;
+    padding: 2px 0 0 0;
+    vertical-align: top;
+  }
+  div.content_crud div.driver div.profile_info div.info{
+    display: inline-block;
+    padding: 5px 5px 0 5px;
+    text-align: center;
+    vertical-align: top;
+  }
+    div.content_crud div.driver div.profile_info div.info div.label{
+      border-bottom: solid 1px rgba(200,200,200,1);
+      font-size: 0.9em;
+      text-align: center;
+    }
+    div.content_crud div.driver div.profile_info div.info div.value{
+      padding: 2px 0 0 0;
+      text-align: center;
+    }
+
+  div.content_crud div.setter{}
+  /* setter: crud */
+  div.content_crud div.setter div.head{
+    background: rgb(250, 255, 243);
+    border: solid 1px #AAA;
+    height: 18px;
+    max-width: -webkit-fill-available;
+      /* remove selection */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+  }
+  div.content_crud div.setter div.head div.label{
+    padding: 3px 0 0 0;
+    text-align: center;
+  }
+  div.content_crud div.setter div.content_box{
+    margin: auto;
+    max-width: max-content;
+    padding: 15px 15px 0 15px;
+  }
+  div.content_crud div.setter div.content_box div.box{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  div.content_crud div.setter div.result{
+    cursor: default;
+    height: 20px;
+    margin: auto;
+    max-width: max-content;
+    min-width: 10px;
+    padding: 10px 0 0 0;
+    /* remove selection */
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+  }
+  div.content_crud div.setter div.result div.label{
+    padding: 2px 0 0 0;
+    text-align: center;
+  }

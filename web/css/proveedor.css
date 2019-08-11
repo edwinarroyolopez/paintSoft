@@ -1,0 +1,147 @@
+/* Colores proveedor */
+
+section#center div.title {
+   background: rgba(1, 150, 227, 0.89);
+}
+
+/* Seleccion Tab */
+.isSelect{  background: rgba(1, 150, 227, 0.3); }
+.isSelect:hover{ background: rgba(1, 150, 227, 0.3) !important; }
+
+section#center div.container div.tabMenu div.tab:hover{
+    background:  rgba(1, 150, 227, 0.1);;
+}
+section#center div.container div.tabMenu div.tab:active{
+    background:  rgba(1, 150, 227, 0.7);
+   /* transition: all .1s; */
+}
+
+section#center div.container div.frame {
+    background:  rgba(1, 150, 227, 0.3);
+}
+
+div.frame div.segment div.field div.textbox input:focus { 
+    border-bottom: solid 2px rgba(1, 150, 227, 0.7);
+}
+
+div.frame div.segment div.field div.button:active{
+    background: rgba(1, 150, 227, 0.7);;
+    color: rgba(255,255,255,1);
+}
+
+
+/* FORMULARIO BUSQUEDA HACE VISIBLE ITEMS */
+.proveedorHidden{display: none !important;}
+
+/* FORMULARIO DE DESCRIPCION */
+
+section#center div.container div#frmDescripcion{
+    
+}
+section#center div.container div#frmDescripcion div.descripcion{
+    background: rgba(255,255,255,1);
+    margin: 5px;
+    padding: 5px;
+}
+div#infoEmail,div#infoDireccion{font-size: 0.9em;}
+section#center div.container div#frmDescripcion div.descripcion div.movimientos{
+    border:dashed 1px rgba(200,200,200,1);
+    display: inline-block;
+    height: 220px;
+    padding: 5px;
+    vertical-align: top;
+    width: 200px;
+}
+
+section#center div.container div#frmDescripcion div.descripcion div.proveedor{
+    border: dashed 1px rgba(200,200,200,1);
+    display: inline-block;
+    padding: 5px;
+    vertical-align: top;
+    width: 200px
+}
+section#center div.container div#frmDescripcion div.descripcion div.proveedor div#infoRazon_social{
+    background: rgba(230,230,230,1);
+    font-size: 1.1em;
+    text-align: center;
+}
+section#center div.container div#frmDescripcion div.descripcion div.proveedor div.info{
+  padding: 4px; 
+}
+section#center div.container div#frmDescripcion div.descripcion div.proveedor div.info div.label{
+    color: rgba(180,180,180,1);
+}
+section#center div.container div#frmDescripcion div.descripcion div.proveedor div.info div.value{
+    color: rgba(0,0,150,1);
+}
+
+/* END *** FORMULARIO DE DESCRIPCION *** END */
+
+
+/* Searcher */
+div.searchProveedor{
+    padding: 20px 0 0 0;
+}
+div.searchProveedor div.field{
+    margin: auto;
+    width: 180px;
+}
+
+div.searchProveedor div.field input#txtSearchProveedor{
+    width: 250px;
+}
+
+div.searchProveedor div.field div#cbProveedor{
+    background: rgba(255,255,255,1);
+    color: rgba(3, 74, 110,1);
+    font-size: 13px;
+    margin: 0 0 0 5px;
+    position: absolute;
+    width: 250px;
+    z-index: 200;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div.searchProveedor div.field div#cbProveedor div.iProveedor:hover{
+    background: rgba(29, 162, 230,.2);
+    cursor: pointer;
+    
+}
+
+div#contentBtn{
+    padding: 5px;
+}
+
+div#contentBtn div#btnAlmacenar{
+    border: dashed 1px rgba(120,120,120,1);
+    border-bottom: 1px solid rgba(29, 162, 230,1);
+    border-top: 1px solid  rgba(29, 162, 230,1);
+    border-radius: 5px;
+    color: rgba(6, 87, 147,1);
+    font-size: 14px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    height: 48px;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+div#contentBtn div#btnAlmacenar div.label{
+    padding: 15px 0 0 0;
+}
+div#contentBtn div#btnAlmacenar:hover{
+    background: rgba(29, 162, 230,.2);
+    cursor: pointer;
+}
+
+.hidden{display: none !important;}

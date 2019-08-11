@@ -1,0 +1,152 @@
+/* Formulario => Ingresar venta */
+
+
+div#frame div.content div.head{
+  background: rgba(0,0,0,0.1);
+  color: rgba(255,0,255,.5);
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+div#frame div#content_factura{margin: 0 0 5px 0;}
+
+div#frame div#content_factura div.field{
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+}
+
+div#frame div#content_factura div.field input::placeholder{text-align: center;}
+div#frame div#content_factura div.field input{text-align: center;}
+
+div#frame div#content_factura div.field div#fmPago{
+  cursor: pointer;
+  line-height: 26px;
+  /* remove selection */
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+/* error forma de pago */
+.error{
+  color: rgba(255,0,0,1);
+}
+.fm_pago_error{
+    color: rgb(200,0,255);
+}
+
+.credito{color: rgba(255,0,0,1);}
+.contado{color: rgba(0,0,255,1);}
+
+div#content_search_cliente{
+  padding: 26px 0 0 0;
+  width: 350px;
+}
+
+div#content_search_cliente div.fieldSearch div.label{padding: 0;}
+
+div#content_search_cliente,div#detalle_cliente{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* List clientes */
+div#selectedCliente{
+  line-height: 24px;
+}
+div#listClientes{
+  margin: 2px 0px;
+  width: 340px;
+}
+
+div#listClientes div.row{}
+
+div#listClientes div.row div.documento{
+   margin: 0 15px 0 0;
+  text-align: right;
+}
+div#listClientes div.row div.nombre{text-align: left;}
+
+
+/* detalle cliente */
+div#detalle_cliente{margin: 20px 0 0 0;}
+
+div#detalle_cliente div.info{
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+}
+
+div#detalle_cliente div.info div.label{
+  border-bottom: solid 1px;
+  line-height: 24px;
+}
+
+div#detalle_cliente div.info div.value{
+  line-height: 24px;
+}
+div#detalle_cliente div#info_ciudad{
+  width: 200px;
+}
+
+
+div#detalle_cliente div#info_direccion{
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+  max-width: 450px;
+  width: auto;
+}
+
+/* historico */
+div#historico{}
+
+div#historico div.info{
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+}
+
+div#historico div.info div.label{
+  border-bottom: solid 1px;
+  line-height: 24px;
+}
+div#historico div.info div.value{
+  line-height: 24px;
+}
+
+
+/**/
+
+div#historico div.list {
+    background: rgba(255,255,255,1);
+    border-left: solid;
+    border-right: solid;
+    font-size: 13px;
+    margin: -20px 0 0 -3px;
+    max-width: 120px !important;
+    min-width: 120px;
+    padding: 5px 0 0 0;
+    position: absolute;
+    width: -webkit-fill-available;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div#historico div.list div.row {
+    border-bottom: solid 1px rgba(240,240,240,1);
+    cursor: pointer;
+    transition: 0.1s all ease;
+}
+
+
+
+
+
+
+
+/**/

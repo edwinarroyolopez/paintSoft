@@ -1,0 +1,109 @@
+div#frame div#content_filtro{margin: 0 0 5px 0;}
+
+div#frame div#content_filtro div.field{
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+}
+
+div#frame div#content_filtro div.field input::placeholder{text-align: center;}
+div#frame div#content_filtro div.field input{text-align: center;}
+
+
+/* content ventas */
+
+/* historico */
+div#content_ventas{}
+
+div#content_ventas div.info{
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+}
+
+div#content_ventas div.info div.label{
+  border-bottom: solid 1px;
+  font-size: 1.2em;
+  line-height: 24px;
+}
+div#content_ventas div.info div.value{
+  line-height: 24px;
+}
+
+div#content_ventas div.info div.valor,
+div#content_ventas div.info div.numero,
+div#content_ventas div.info div.ganancia{
+  border-top: solid 1px;
+  color: #CCC;
+  font-size: 1.1em;
+  height: 20px;
+  line-height: 20px;
+}
+
+/* data */
+div#content_detalle_ventas,
+div#content_detalle_creditos{margin: 20px 0 0 0;}
+
+div#content_detalle_ventas div#dataVentas,
+div#content_detalle_creditos div#dataCreditos{
+  margin: auto;
+}
+
+div#content_detalle_ventas div#dataVentas div.cell,
+div#content_detalle_creditos div#dataCreditos div.cell{
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: top;
+  width: 100px;
+}
+
+div#content_detalle_ventas div#dataVentas div.header,
+div#content_detalle_creditos div#dataCreditos div.header{
+  color: rgba(255,0,255,.5);
+  font-size: 1.1em;
+}
+
+div#content_detalle_ventas div#dataVentas div.row,
+div#content_detalle_creditos div#dataCreditos div.row{}
+
+div#content_detalle_ventas div#dataVentas div.fecha{}
+div#content_detalle_ventas div#dataVentas div.numero{}
+div#content_detalle_ventas div#dataVentas div.cliente{width: 300px;}
+div#content_detalle_ventas div#dataVentas div.forma_pago{}
+div#content_detalle_ventas div#dataVentas div.valor{}
+div#content_detalle_ventas div#dataVentas div.ganancia{}
+
+
+div#content_detalle_ventas div#dataVentas div.i,
+div#content_detalle_creditos div#dataCreditos div.i{}
+div#content_detalle_ventas div#dataVentas div.p,
+div#content_detalle_creditos div#dataCreditos div.p{background: rgba(0,0,0,0.05)}
+
+
+
+/* Facturas de credito */
+
+div#content_button_filtro{}
+div#content_button_filtro div.button{
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+  div#content_detalle_creditos div#dataCreditos div.cell{width: 80px;}
+
+
+  div#content_detalle_creditos div#dataCreditos div.fecha{}
+  div#content_detalle_creditos div#dataCreditos div.valor{}
+  div#content_detalle_creditos div#dataCreditos div.saldo{}
+  div#content_detalle_creditos div#dataCreditos div.numero{}
+  div#content_detalle_creditos div#dataCreditos div.cliente{width: 250px;}
+  div#content_detalle_creditos div#dataCreditos div.abonos{}
+  div#content_detalle_creditos div#dataCreditos div.ultimo_abono{}
+  div#content_detalle_creditos div#dataCreditos div.valor_ultimo_abono{width: 90px;}
+  div#content_detalle_creditos div#dataCreditos div.estado{}
+
+
+
+
+/**/

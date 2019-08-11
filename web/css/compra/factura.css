@@ -1,0 +1,99 @@
+/* Formulario => Ingresar venta */
+
+
+div#frame div.content div.head{
+  background: rgba(0,0,0,0.1);
+  color: rgba(255,0,255,.5);
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+div#frame div#content_factura{margin: 0 0 5px 0;}
+
+div#frame div#content_factura div.field{
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+}
+
+div#frame div#content_factura div.field input::placeholder{text-align: center;}
+div#frame div#content_factura div.field input{text-align: center;}
+
+div#frame div#content_factura div.field div#fmPago{
+  cursor: pointer;
+  line-height: 26px;
+  /* remove selection */
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+/* error forma de pago */
+.error{
+  color: rgba(255,0,0,1);
+}
+.fm_pago_error{
+    color: rgb(200,0,255);
+}
+
+.credito{color: rgba(255,0,0,1);}
+.contado{color: rgba(0,0,255,1);}
+
+
+div#content_resumen_factura div#detalle_resumen{margin: 5px 0;}
+
+div#detalle_resumen div.info{
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+}
+
+div#detalle_resumen div.info div.label{
+  border-top: solid 1px;
+  line-height: 24px;
+}
+
+div#detalle_resumen div.info div.value{
+  height: 24px;
+  line-height: 24px;
+}
+div#detalle_resumen div.info input{
+  line-height: 24px;
+  text-align: center;
+  width: 120px;
+}
+
+div#content_devolucion{
+  margin: 0;
+}
+div#content_devolucion div.devolucion{
+  display: inline-block;
+  vertical-align: top;
+}
+
+div#content_devolucion div.devolucion div.info{
+  line-height: 28px;
+}
+
+div#content_devolucion div.devolucion input{text-align: center;}
+
+
+div#content_button_finalizar{}
+div#content_button_finalizar div.button{
+  display: inline-block;
+  width: 120px;
+}
+
+div#content_button_finalizar div#message_error_venta{
+  color: rgba(255,0,0,1);
+  font-size: 1.1em;
+  font-weight: bold;
+  height: 24px;
+  line-height: 24px;
+}
+
+
+
+
+/**/
