@@ -160,7 +160,7 @@ public class InventarioDAO {
             try
             {
 
-                PreparedStatement cstmt = sql.getConexion().prepareStatement("SELECT 	Precio_venta, Stock From tblInventario I where I.stock>0 and I.Id IN (SELECT MAX(I2.Id) FROM tblInventario I2 WHERE I2.Id_producto=I.Id_producto and I2.Id_unidad_medida=I.Id_unidad_medida )  order by I.Id_producto asc",
+                PreparedStatement cstmt = sql.getConexion().prepareStatement("SELECT 	CASE WHEN Precio_compra IS NULL THEN 0 ELSE Precio_compra END as Precio_compra, Precio_venta, Stock From tblInventario I where I.stock>0 and I.Id IN (SELECT MAX(I2.Id) FROM tblInventario I2 WHERE I2.Id_producto=I.Id_producto and I2.Id_unidad_medida=I.Id_unidad_medida )  order by I.Id_producto asc",
                 ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
 
                  /* Parametros IN */
@@ -170,7 +170,8 @@ public class InventarioDAO {
                  while (r.next()) {
 
                       list = list +  "{\"Cantidad\":"+String.valueOf(r.getInt("Stock"))+
-                                ",\"Precio_venta\":"+String.valueOf(r.getInt("Precio_venta"))+"}";
+                                ",\"Precio_venta\":"+String.valueOf(r.getInt("Precio_venta"))+
+                                ",\"Precio_compra\":"+String.valueOf(r.getInt("Precio_compra"))+"}";
 
                       if(r.isLast()==false){
                          list = list + ",";

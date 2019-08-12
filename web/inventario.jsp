@@ -24,8 +24,12 @@
     </head>
     <body>
         <div id="Inventario">
-            <div class="label">Valor actual</div>
+            <div class="label">Valor actual precio venta</div>
             <div id="Total">0</div>
+            <br>
+            <div class="label">Valor actual precio compra</div>
+            <div id="Total_compra">0</div>
+
 
             <div id="setcantidad_producto">
                 <div style="font-size: 16px;"><b>Unidades Enteras</b></div>

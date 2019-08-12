@@ -53,17 +53,19 @@ function plataActual(){
         var jSon = $.parseJSON($.trim(r));
 
         var valor = 0;
+        var valor_compra = 0;
         
         
         for(i in jSon){
             /* Controlar cantidades negativas */
             if(parseInt(jSon[i].Cantidad)>0){
                valor = valor + parseInt(jSon[i].Cantidad)*parseInt(jSon[i].Precio_venta);
+               valor_compra = valor_compra + parseInt(jSon[i].Cantidad)*parseInt(jSon[i].Precio_compra);
             }
             
         }
         document.getElementById('Total').innerHTML = new Intl.NumberFormat("de-DE").format(valor);
-
+        document.getElementById('Total_compra').innerHTML = new Intl.NumberFormat("de-DE").format(valor_compra);
 
     });
 
