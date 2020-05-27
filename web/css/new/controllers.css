@@ -61,6 +61,7 @@ div.field {
     border-top: solid 1px rgb(142, 173, 104);
     color: rgb(142, 173, 104);
     cursor: pointer;
+    font-weight: bold;
     height: 24px;
     margin: auto;
     text-align: center;

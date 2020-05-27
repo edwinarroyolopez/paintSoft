@@ -1,0 +1,16 @@
+#content_button_eliminar .button{
+    display: inline-block !important;
+    margin: 10px;
+}
+
+#btn_eliminar_facturas, #btn_cerrar_facturas{
+    height: 40px;
+    width: 150px;
+}
+#content_valor_facturas{
+    line-height: 20px;
+}
+
+#valor_facturas{
+    font-weight: bold;
+}
