@@ -11,7 +11,7 @@ function fechaFactura() {
 
   /* datepicker */
   $(function () {
-    $("input#txtFecha").datepicker();
+   // $("input#txtFecha").datepicker();
   });
 }/* ## Fecha factura ## */
 
@@ -202,6 +202,7 @@ function get_json_detalle_formula() {
 
 /* Facturar */
 function Facturar(encabezado, detalle_producto, detalle_formula) {
+    $('div#btn_facturar').prop('disabled', true);
 
   var response = {};
   var promise = new Promise(function (resolve, reject) {
@@ -213,12 +214,15 @@ function Facturar(encabezado, detalle_producto, detalle_formula) {
     }, function (r) {/* Callback ...   */
       if (r != '') {
         response = r;
-   //     $.notify("Factura ingresada correctamente", "success");
+        $.notify("Factura ingresada correctamente", "success");
       }
+      $('div#btn_facturar').prop('disabled', false);
       resolve(response)
     });
 
     if (!response) {
+         $.notify("Hubo un error al almacenar la facutura", "error");
+         $('div#btn_facturar').prop('disabled', false);
       reject(new Error('No almacena factura!'))
     }
   })/* promise */
@@ -376,6 +380,7 @@ $(document).on('ready', function () {
   $('div#content_button_finalizar').on('click', 'div#btn_facturar', function () {
 
     //$.notify("Ingresando factura, por favor espera un momento", "info");
+    
 
     /* Validaciones ---> Cliente */
     var id_cliente = document.getElementById('selectedCliente').getAttribute('data-id');
@@ -386,6 +391,7 @@ $(document).on('ready', function () {
       /* Evita que continúe con el proceso de almacenamiento, porque no ha seleccionado
         un cliente */
       document.getElementById('txt_search_cliente').focus();
+         $.notify("Es necesario que selecciones un cliente para almacenar la factura", "warn");
       return;
     }
 
@@ -399,6 +405,7 @@ $(document).on('ready', function () {
     if ((cantidad_formulas === 0) && (cantidad_productos === 0)) {
       /* Se detiene el proceso de almacenamiento hasta que seleccione un producto */
       document.getElementById('txt_search_producto').focus();
+      $.notify("Es necesario que selecciones un producto", "warn");
       return;
     }
 
@@ -410,6 +417,7 @@ $(document).on('ready', function () {
       /* Se detiene el proceso de almacenamiento hasta que seleccione una forma de pago */
       $('div#fmPago').addClass('fm_pago_error');
       document.getElementById('message_error_venta').innerHTML = 'Seleccione la forma de pago';
+      $.notify("Selecciona la forma de pago", "warn");
       return;
     }
 
@@ -431,7 +439,6 @@ $(document).on('ready', function () {
 
 
     Facturar(encabezado, detalle_producto, detalle_formula).then(function (r) {
-
       var factura = document.getElementById('txtFactura').value;
 
 

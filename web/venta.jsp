@@ -28,7 +28,7 @@
   <script type="text/javascript" src="js/venta/general.js"></script>
   <script type="text/javascript" src="js/venta/modal.js"></script>
 
-  <!-- datepicker -->
+  <!-- datepicker 
   <link rel="stylesheet" href="js/new/libraries/datepicker/jquery-ui.css">
   <link rel="stylesheet" href="js/new/libraries/datepicker/style.css">
   <script src="js/new/libraries/datepicker/jquery-1.12.4.js"></script>
