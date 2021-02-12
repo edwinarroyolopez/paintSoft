@@ -382,7 +382,8 @@ function create_Formula(descripcion,peso,medida){
               /* Resumen factura  */
               //Iva =  Iva + precio*iva ;
               Total = Total + precio;
-              Iva =  Total*iva ;
+              //Iva =  Iva + precio*iva ;
+              Iva = parseInt(Total - Total/1.19) /* iva correcto */
               Subtotal = Total - Iva;
 
               document.getElementById('info_subtotal').innerHTML= Subtotal;
